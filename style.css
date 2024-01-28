@@ -1,0 +1,253 @@
+:root {
+  --clr-gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+  --clr-pale-blue: hsl(243, 100%, 93%);
+  --clr-greyish-blue: hsl(229, 7%, 55%);
+  --clr-dark-blue: hsl(228, 56%, 26%);
+  --clr-v-dark-blue: hsl(229, 57%, 11%);
+
+  --clr-white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100svh;
+  background: url("./images/bg-desktop.png");
+  background-color: var(--clr-v-dark-blue);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  font-size: 14px;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100svh;
+  margin-left: 320px;
+}
+
+/* Small box with icons */
+
+.box-small {
+  flex-basis: 19rem;
+  height: 10rem;
+  background: var(--clr-dark-blue);
+  border-radius: 10px 80px 10px 10px;
+  margin-right: 40px;
+  margin-top: -60px;
+  box-shadow: rgba(41, 43, 45, 0.2) 0px 8px 24px;
+}
+
+.logo {
+  display: block;
+  width: 6rem;
+  margin-top:30px;
+  margin-left: 30px;
+}
+
+
+.box-icon {
+  width: 40px;
+  height: 40px;
+  background: var(--clr-v-dark-blue);
+  border-radius: 5px;
+}
+
+.box-left {
+display: inline-block;
+position: relative;
+top: 30px;
+left: 30px;
+
+}
+
+.img-left {
+  width: 17px;
+  position: absolute;
+  left: 12px;
+  top: 7px;
+}
+
+.box-middle {
+  display: inline-block;
+  position: relative;
+  top: 30px;
+  left: 45px;
+}
+
+.img-middle {
+  width: 20px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.box-right {
+  display: inline-block;
+  position: relative;
+  top: 30px;
+  left: 60px;
+}
+
+.img-right {
+  width: 20px;
+  position: absolute;
+  left: 10px;
+  top: 13px;
+}
+
+/* Storage Box */
+
+.box-large {
+  flex-basis: 480px;
+  height: 8rem;
+  background: var(--clr-dark-blue);
+  border-radius: 10px;
+  margin-top: -30px;
+  box-shadow: rgba(30, 30, 33, 0.2) 0px 7px 29px 0px;
+}
+
+.summary, .storage-start, .storage-end {
+  color: var(--clr-white);
+  font-size: 0.7rem;
+  display: inline-block;
+}
+
+span {
+  font-weight: 700;
+  color: var(--clr-white)
+}
+
+.summary {
+  margin: 30px 0 20px 35px;
+}
+
+.storage-start {
+  margin: 10px 300px 30px 35px;
+}
+
+/* Storage info*/
+
+.progress-bar {
+  height: 15px;
+  width: 375px;
+  background: var(--clr-v-dark-blue);
+  margin-left: 35px;
+  border-radius: 10px;
+}
+
+.loaded {
+  height: 10px;
+  width: 280px;
+  background: #fff;
+  background: linear-gradient(to right, hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+  border-radius: 6px;
+  position: relative;
+  top: 2px;
+  left: 3px;
+}
+
+.circle {
+  height: 8px;
+  width: 8px;
+  background: var(--clr-white);
+  position: relative;
+  top: -7px;
+  left: 272px;
+  border-radius: 50%;
+}
+
+.GB {
+  color: var(--clr-greyish-blue);
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+
+*/
+
+/* Speech Bubble Styling */
+
+.wrapper {
+  width: 120px;
+}
+
+.wrapper .inner-wrapper {
+width: 100%;
+margin-bottom: 20px;
+}
+
+.wrapper .inner-wrapper h1 {
+  margin: 0 0 10px 0;
+}
+
+.bubble {
+  position: relative;
+  top: -70px;
+  left: -210px;
+  background: var(--clr-white);
+  padding: 10px;
+  color: var(--clr-v-dark-blue);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.bubble ::after {
+  content: "";
+  display: block;
+  position:absolute;
+  width: 0;
+  height: 0;
+  top: 53px;
+  left: 107.5px;
+  right:auto;
+  bottom: auto;
+  border: 12px solid ;
+  border-color: #fff #fff transparent transparent;
+}
+
+/*Responsive Styling
+
+@media (max-width: 375px) {
+
+  .body {
+
+    min-height: 100svh;
+    background: url("./images/bg-mobile.png");
+    background-color: var(--clr-v-dark-blue);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100svh;
+    align-items: center;
+  }
+
+  .box-small {
+    flex-direction: column;
+   flex-basis: 10rem;
+  }
+
+  .b0x-large {
+    flex-direction: column;
+    flex-basis: 10rem;
+  }
+
+}
+
+*/
+
+
+
+
